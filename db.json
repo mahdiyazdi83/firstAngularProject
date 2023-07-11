@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "m",
+      "password": ""
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "username": "mahdi",
+      "password": "yazdi"
+    }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "foodName": "pizza",
+      "DoN": 2,
+      "price": 13.5,
+      "timeToServe": 45
+    },
+    {
+      "id": 2,
+      "foodName": "Qeyme",
+      "DoN": 1,
+      "price": 18.99,
+      "timeToServe": 20
+    },
+    {
+      "id": 3,
+      "foodName": "kebab",
+      "DoN": 1,
+      "price": 15,
+      "timeToServe": 50
+    },
+    {
+      "id": 4,
+      "foodName": "pasta",
+      "DoN": 2,
+      "price": 17.8,
+      "timeToServe": 65
+    },
+    {
+      "id": 5,
+      "foodName": "Qorme Sabzi",
+      "DoN": 1,
+      "price": 11.1,
+      "timeToServe": 20
+    },
+    {
+      "id": 6,
+      "foodName": "sandwich",
+      "DoN": 1,
+      "price": 12,
+      "timeToServe": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<div>
+  <button [style.margin-left]="'96%'" (click)="onLogout()">Logout</button>
+  <br>
+  <table class="border">
+    <tr class="border">
+      <th class="border">No.</th>
+      <th class="border">Food Name</th>
+      <th class="border">Domestic or International</th>
+      <th class="border">Price of Food</th>
+      <th class="border">Time to serve the food</th>
+    </tr>
+    <tr class="border" *ngFor="let foods of foodData">
+      <td class="border">{{foods.id}}</td>
+      <td class="border">{{foods.foodName}}</td>
+      <td class="border">{{foods.DoN | don}}</td>
+      <td class="border">{{foods.price | currency: 'USD'}}</td>
+      <td class="border">{{foods.timeToServe | timeToServe}}</td>
+    </tr>
+  </table>
+  <br>
+  <button *ngIf="showAddButton" (click)="showAddButton = false">Add Food</button>
+  <br>
+  <ng-container *ngIf="!showAddButton">
+    <app-add-food (onShowForm)="onShowForm($event)" (sendNewFoodData)="onAddFood($event)"></app-add-food>
+  </ng-container>
+</div>

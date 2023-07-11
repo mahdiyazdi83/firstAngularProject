@@ -1,0 +1,25 @@
+<br>
+<div>
+  <div [formGroup]="addFoodForm" class="add-div">
+    <div>
+      <label for="nameFood">Add new name for new food you want add: </label>
+      <input id="nameFood" formControlName="nameFood">
+    </div>
+    <div>
+      <label for="foodPrice"> Add price for new food you want add: </label>
+      <input type="number" id="foodPrice" formControlName="foodPrice">
+    </div>
+    <div>
+      <label for="foodServeTime"> Add serve time for new food you want add: </label>
+      <input type="number" id="foodServeTime" formControlName="foodServeTime">
+    </div>
+  </div>
+  <div class="t">
+    <p [style.margin]="0">Chose the food is Domestic or International:</p>
+    <select [(ngModel)]="DoN">
+      <option value="1">Domestic</option>
+      <option value="2">International</option>
+    </select>
+  </div>
+  <button type="submit" (click)="onSubmit()">Add new food</button>
+</div>
